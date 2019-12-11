@@ -1,0 +1,4 @@
+Server Side:
+First, run the automated scripts to download and install all the needed environment/packages/libraries on the server node. In this case, we should have python3.6 and pytorch, torchvision, PIL/pillow installed. And then we should run the image_server.py which runs as a server program and keeps listening to the connection requests over a socket. Once the connection is established, the server will accept the image file from the client side and use the pretrained network to detect objects in the image and send the results back to client. And the connection is terminated after the results are sent back. 
+Client Side:
+Also, run the automated scripts to download and install all the required environment/packages/libraries on the client node. We should have a public routable IP address. In this case, we are using the 192.12.245.164. We should have Apache deployed and put the upload.html and client.py on the client node. Users can access to the application by 
