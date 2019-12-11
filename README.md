@@ -5,6 +5,15 @@ This is a BU CS655 project.
 
 In this project, we need to implement an image-recognition program that runs on two nodes separately. One of the nodes should take care of the image submitted from a client and query the other node which provides an interface that could be used to recognize an image and return the result.
 
+## File description
+**backend** provides server node configuration file `server_node.sh`, node reservation file `server_node.rspec`, backend python file `image_server.py` and image recognition API `api.py` and `imagenet_class_index.json`.
+
+**frontend** provides client node configuration file `client_node.sh`, client node reservation file `client.rspec`, frontend python file `client.py` and webpage file `upload.html` and `cgi-enabled.conf`.
+
+**testcase** provides testcase pictures and results under `accuracy`, `exceptions` and `filesize` seperately.
+
+Besides, we also provide the project proposal `CS655 Geni Mini Project - Image Recognition Application.pdf`, final report `655_mini_project_final_report.pdf` and demo video `Screen-Recording.mov`.
+
 ## Experimental Methodology 
 Since our system mainly consists of three modules, we introduce the technical details of them separately: 
 ### Client node
