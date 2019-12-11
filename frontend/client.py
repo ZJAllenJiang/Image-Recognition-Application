@@ -25,7 +25,7 @@ def image_client(fn):
     filepath=fn
 
     # preprocess input image and fit for transmission
-    processed_file = struct.pack(b'128sq', bytes(os.path.basename(filepath), encoding='utf-8'), os.stat(filepath).st_s$
+    processed_file = struct.pack(b'128sq', bytes(os.path.basename(filepath), encoding='utf-8'), os.stat(filepath).st_size)
     s.send(processed_file)
 
     fp = open(filepath, 'rb')
